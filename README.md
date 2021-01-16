@@ -1,5 +1,8 @@
-To run this, follow the below commands - 
+To run this, follow the below commands -\
+
+\
 npm i
+\
 ng serve
 
 # Search
