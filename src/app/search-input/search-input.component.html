@@ -1,0 +1,9 @@
+<div>
+    <input type="text" id="search-box" placeholder="enter name to search" (keyup)="keyUp($event)">
+
+    <div *ngIf="stringEntered.length !== 0" style="background-color: antiquewhite; cursor: pointer;">
+        <div *ngFor="let row of dropDownList" (click)="selectFromDropDown(row)">
+            {{row.name}} <br />
+        </div>
+    </div>
+</div>

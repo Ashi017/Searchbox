@@ -1,0 +1,22 @@
+<table style="    float: right;">
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>USERNAME</th>
+    <th>EMAIL</th>
+    <th>WEBSITE</th>
+    <th>PHONE</th>
+  </tr>
+
+  <ng-container *ngFor="let row of list">
+    <tr (click)="select(row)">
+      <td>{{row.id}}</td>
+      <td>{{row.name}}</td>
+      <td>{{row.username}}</td>
+      <td>{{row.email}}</td>
+      <td>{{row.website}}</td>
+      <td>{{row.phone}}</td>
+    </tr>
+  </ng-container>
+
+</table>
